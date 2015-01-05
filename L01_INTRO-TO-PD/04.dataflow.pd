@@ -1,5 +1,5 @@
-#N canvas 145 52 737 383 10;
-#X obj 28 28 cnv 15 500 150 empty empty HOT_+_COLD 20 20 0 14 -233017
+#N canvas 30 531 1342 598 10;
+#X obj 28 28 cnv 15 500 150 empty empty HOT+COLD 20 20 0 14 -233017
 -66577 0;
 #X floatatom 49 89 5 0 0 0 - - -;
 #X floatatom 91 89 5 0 0 0 - - -;
@@ -11,6 +11,39 @@ on by an object immediately.;
 in the object until a "hot" inlet is activated.;
 #X text 46 64 "hot";
 #X text 86 64 "cold";
+#X obj 29 198 cnv 15 500 150 empty empty ORDER-OF-OPERATION 20 20 0
+14 -233017 -66577 0;
+#X obj 52 311 print;
+#X obj 52 249 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 87 277 1st;
+#X msg 52 277 2nd;
+#X text 151 255 Pd orders which inlets to bang based upon WHEN you
+connected them \, not the order that they appear.;
+#X text 150 289 If you would like to override this \, you need to use
+the [trigger] object.;
+#X obj 547 200 cnv 15 500 150 empty empty ORDER-OF-OPERATION-PT2 20
+20 0 14 -233017 -66577 0;
+#X floatatom 569 236 5 0 0 0 - - -;
+#X floatatom 611 236 5 0 0 0 - - -;
+#X floatatom 569 329 5 0 0 0 - - -;
+#X obj 569 300 +;
+#X obj 580 264 trigger bang float;
+#X text 604 239;
+#X text 564 239;
+#X text 699 260 [trigger] outputs according to its creation arguments
+in right to left order. In this case \, when it receives input \, it
+will first send out a "float" (i.e. a floating point number) from its
+right outlet \, then it will send a "bang" out its left outlet.;
 #X connect 1 0 4 0;
 #X connect 2 0 4 1;
 #X connect 4 0 3 0;
+#X connect 11 0 13 0;
+#X connect 11 0 12 0;
+#X connect 12 0 10 0;
+#X connect 13 0 10 0;
+#X connect 17 0 20 0;
+#X connect 18 0 21 0;
+#X connect 20 0 19 0;
+#X connect 21 0 20 0;
+#X connect 21 1 20 1;

@@ -1,4 +1,4 @@
-#N canvas 603 116 450 300 10;
+#N canvas 576 142 450 300 10;
 #X obj 27 263 print;
 #X msg 27 32 hello world;
 #X floatatom 49 64 5 0 0 0 - - -;
@@ -12,7 +12,7 @@
 -1 -1 0;
 #X obj 290 92 bng 25 250 50 0 empty empty bang 0 -6 0 8 -262144 -1
 -1;
-#X obj 315 167 tgl 25 0 empty empty toggle 0 -6 0 8 -262144 -1 -1 0
+#X obj 315 167 tgl 25 0 empty empty toggle 0 -6 0 8 -262144 -1 -1 1
 1;
 #X symbolatom 268 228 10 0 0 0 - - -;
 #X msg 268 206 bang;

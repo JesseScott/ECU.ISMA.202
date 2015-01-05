@@ -1,0 +1,45 @@
+#N canvas 64 212 948 710 12;
+#X obj 194 182;
+#X msg 194 226;
+#X floatatom 194 263 5 0 0 0 - - -;
+#X symbolatom 195 304 10 0 0 0 - - -;
+#X text 193 339 comment;
+#X text 136 181 1;
+#X text 135 225 2;
+#X text 135 262 3;
+#X text 133 302 4;
+#X text 133 339 5;
+#X obj 26 71 cnv 15 430 15 empty empty empty 20 12 0 14 -179884 -66577
+0;
+#X text 29 70 Keyboard;
+#X text 29 154 META + <number>;
+#X obj 464 72 cnv 15 430 15 empty empty empty 20 12 0 14 -179884 -66577
+0;
+#X text 467 70 Menu Bar;
+#X obj 465 195 cnv 15 430 15 empty empty empty 20 12 0 14 -179884 -66577
+0;
+#X text 471 215 Right-Click (Ctrl-Click on mac);
+#X text 525 233 + Properties;
+#X text 470 192 Mouse;
+#X obj 310 418 bng 15 250 50 0 empty empty empty 0 -6 0 16 -262144
+-260097 -1;
+#X obj 313 451 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 312 481 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-262144 -1 -1 0 256;
+#X obj 80 619 hsl 128 15 0 127 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X obj 312 523 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X text 30 384 SHIFT + META + <letter>;
+#X text 216 415 b;
+#X text 216 448 t;
+#X text 216 478 n;
+#X text 217 537 v;
+#X text 217 615 h;
+#X text 525 101 + File -> Save \; + Edit -> Font \; + Edit -> Tidy
+Up \; + Media -> Audio ON;
+#X text 106 358;
+#X text 249 701;
+#X text 28 96 CTRL (windows/linux) or CMD (mac) + 'E' \; Switch Between
+Edit and Play Mode;
