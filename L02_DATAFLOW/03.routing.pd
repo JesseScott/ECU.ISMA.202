@@ -1,0 +1,53 @@
+#N canvas 548 22 596 930 10;
+#X obj 27 19 cnv 15 300 200 empty empty MOSES 20 20 0 14 -233017 -66577
+0;
+#X obj 27 240 cnv 15 300 200 empty empty SELECT 20 20 0 14 -233017
+-66577 0;
+#X obj 27 461 cnv 15 300 200 empty empty SPIGOT 20 20 0 14 -233017
+-66577 0;
+#X obj 28 680 cnv 15 300 200 empty empty ROUTE 20 20 0 14 -233017 -66577
+0;
+#X floatatom 46 284 5 0 0 0 - - -;
+#X floatatom 79 361 5 0 0 0 - - -;
+#X floatatom 51 179 5 0 0 0 - - -;
+#X floatatom 90 179 5 0 0 0 - - -;
+#X obj 51 156 moses 5;
+#X msg 51 68 2;
+#X msg 63 80 4;
+#X msg 75 92 6;
+#X msg 87 104 8;
+#X obj 50 568 spigot;
+#X msg 83 531 0;
+#X msg 99 543 1;
+#X obj 46 332 select;
+#X floatatom 79 303 5 0 0 0 - - -;
+#X obj 46 388 bng 45 250 50 0 empty empty empty 17 7 0 10 -257985 -1
+-1;
+#X obj 105 793 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 48 770 route 1 10;
+#X floatatom 50 510 5 0 0 0 - - -;
+#X floatatom 50 601 5 0 0 0 - - -;
+#X floatatom 48 728 5 0 0 0 - - -;
+#X obj 48 823 bng 45 250 50 0 empty empty empty 17 7 0 10 -257985 -1
+-1;
+#X obj 100 823 bng 45 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X connect 4 0 16 0;
+#X connect 8 0 6 0;
+#X connect 8 1 7 0;
+#X connect 9 0 8 0;
+#X connect 10 0 8 0;
+#X connect 11 0 8 0;
+#X connect 12 0 8 0;
+#X connect 13 0 22 0;
+#X connect 14 0 13 1;
+#X connect 15 0 13 1;
+#X connect 16 0 18 0;
+#X connect 16 1 5 0;
+#X connect 17 0 16 1;
+#X connect 20 0 24 0;
+#X connect 20 1 25 0;
+#X connect 20 2 19 0;
+#X connect 21 0 13 0;
+#X connect 23 0 20 0;
