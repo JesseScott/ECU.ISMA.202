@@ -30,9 +30,8 @@
 #X obj 48 779 mod 100;
 #X obj 48 755 f;
 #X obj 82 755 + 1;
-#X obj 48 709 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 1
+#X obj 48 709 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
 1;
-#X text 60 739;
 #X obj 48 727 metro 50;
 #X obj 48 803 select 1;
 #X connect 1 0 3 0;
@@ -48,10 +47,10 @@
 #X connect 15 0 17 0;
 #X connect 16 0 17 1;
 #X connect 17 0 18 0;
-#X connect 21 0 27 0;
+#X connect 21 0 26 0;
 #X connect 22 0 23 0;
 #X connect 22 0 21 0;
 #X connect 23 0 22 1;
-#X connect 24 0 26 0;
-#X connect 26 0 22 0;
-#X connect 27 0 20 0;
+#X connect 24 0 25 0;
+#X connect 25 0 22 0;
+#X connect 26 0 20 0;
