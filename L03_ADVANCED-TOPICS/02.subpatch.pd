@@ -1,0 +1,27 @@
+#N canvas 663 22 596 930 10;
+#X obj 27 19 cnv 15 200 200 empty empty SUBPATCH 20 20 0 14 -233017
+-66577 0;
+#N canvas 800 182 450 300 subpatch 0;
+#X restore 75 90 pd subpatch;
+#X obj 28 238 cnv 15 200 200 empty empty INLETS 20 20 0 14 -233017
+-66577 0;
+#N canvas 800 182 450 300 subpatch 0;
+#X obj 111 61 inlet;
+#X obj 111 97 print inlet_value;
+#X connect 0 0 1 0;
+#X restore 77 309 pd subpatch;
+#X floatatom 77 278 5 0 0 0 - - -;
+#X obj 28 458 cnv 15 200 200 empty empty OUTLETS 20 20 0 14 -233017
+-66577 0;
+#N canvas 800 182 450 300 subpatch 0;
+#X obj 111 61 inlet;
+#X obj 111 106 outlet;
+#X floatatom 111 84 5 0 0 0 - - -;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X restore 77 529 pd subpatch;
+#X floatatom 77 498 5 0 0 0 - - -;
+#X floatatom 77 558 5 0 0 0 - - -;
+#X connect 4 0 3 0;
+#X connect 6 0 8 0;
+#X connect 7 0 6 0;
