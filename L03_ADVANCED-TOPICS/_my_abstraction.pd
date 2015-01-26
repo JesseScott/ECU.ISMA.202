@@ -1,0 +1,6 @@
+#N canvas 1008 22 596 930 10;
+#X obj 27 19 cnv 15 200 200 empty empty THIS_IS_AN_ABSTRACTION 20 20
+0 14 -233017 -66577 0;
+#X obj 62 146 print abstract success!;
+#X obj 62 87 inlet;
+#X connect 2 0 1 0;
