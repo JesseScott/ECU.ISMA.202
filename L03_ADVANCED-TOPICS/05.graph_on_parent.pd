@@ -1,0 +1,19 @@
+#N canvas 663 22 596 930 10;
+#X obj 27 19 cnv 15 200 200 empty empty GRAPH 20 20 0 14 -233017 -66577
+0;
+#N canvas 88 325 707 381 (subpatch) 0;
+#X obj 35 56 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5200 1;
+#X obj 32 -49 random 127;
+#X obj 32 -79 r bang;
+#X text -2 148 Only whatever sits inside this red box will be drawn
+;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X coords 0 1 100 -1 200 140 1 0 0;
+#X restore 27 80 graph;
+#X obj 133 60 s bang;
+#X obj 133 35 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 236 138 <--- CTRL-Click to Open!!!;
+#X connect 3 0 2 0;
