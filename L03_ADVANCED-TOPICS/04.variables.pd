@@ -1,0 +1,11 @@
+#N canvas 607 22 596 930 10;
+#X obj 27 19 cnv 15 200 200 empty empty DOLLAR_SIGNS 20 20 0 14 -233017
+-66577 0;
+#X obj 68 123 + \$1;
+#X floatatom 68 82 5 0 0 0 - - -;
+#X floatatom 106 82 5 0 0 0 - - -;
+#X floatatom 68 158 5 0 0 0 - - -;
+#X text 105 122 \$1 simply is a placeholder for the second inlet;
+#X connect 1 0 4 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 1;
