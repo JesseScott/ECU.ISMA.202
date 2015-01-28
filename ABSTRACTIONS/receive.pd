@@ -1,0 +1,46 @@
+#N canvas 939 22 742 918 10;
+#X declare -lib mrpeach;
+#X declare -lib mrpeach;
+#X obj -33 25 cnv 15 400 400 empty empty empty 20 20 0 14 -261234 -66577
+0;
+#X obj -6 55 import mrpeach;
+#X obj -7 87 udpreceive 3001;
+#X obj -7 119 unpackOSC;
+#X obj -21 223 cnv 15 120 90 empty empty empty 20 12 0 14 -204786 -66577
+0;
+#X obj -7 233 routeOSC /CH1;
+#X floatatom -7 260 5 0 0 0 - - -;
+#X obj -7 286 s CH1;
+#X obj 116 223 cnv 15 120 90 empty empty empty 20 12 0 14 -204786 -66577
+0;
+#X floatatom 130 260 5 0 0 0 - - -;
+#X obj 130 233 routeOSC /CH2;
+#X obj 130 286 s CH2;
+#X obj -20 329 cnv 15 120 90 empty empty empty 20 12 0 14 -204786 -66577
+0;
+#X floatatom -6 366 5 0 0 0 - - -;
+#X obj 117 329 cnv 15 120 90 empty empty empty 20 12 0 14 -204786 -66577
+0;
+#X floatatom 131 366 5 0 0 0 - - -;
+#X obj -6 339 routeOSC /CH3;
+#X obj -6 392 s CH3;
+#X obj 131 339 routeOSC /CH4;
+#X obj 131 392 s CH4;
+#X obj 160 93 ../ABSTRACTIONS/broadcast;
+#X floatatom 160 58 5 0 0 0 - - -;
+#X floatatom 209 58 5 0 0 0 - - -;
+#X floatatom 258 58 5 0 0 0 - - -;
+#X floatatom 307 58 5 0 0 0 - - -;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 3 0 18 0;
+#X connect 3 0 16 0;
+#X connect 5 0 6 0;
+#X connect 10 0 9 0;
+#X connect 16 0 13 0;
+#X connect 18 0 15 0;
+#X connect 21 0 20 0;
+#X connect 22 0 20 1;
+#X connect 23 0 20 2;
+#X connect 24 0 20 3;
