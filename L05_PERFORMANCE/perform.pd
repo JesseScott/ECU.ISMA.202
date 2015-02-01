@@ -1,4 +1,4 @@
-#N canvas 1080 22 803 404 10;
+#N canvas 1080 22 802 584 10;
 #X declare -lib mrpeach;
 #X declare -lib mrpeach;
 #X obj -11 -345 cnv 15 800 400 empty empty empty 20 20 0 14 -261234
@@ -694,7 +694,7 @@
 #X floatatom 99 126 5 0 0 0 - - -;
 #X floatatom 126 147 5 0 0 0 - - -;
 #X obj 45 26 r COMP1;
-#N canvas 602 22 496 613 drums 1;
+#N canvas 602 22 496 613 drums 0;
 #X obj 160 20 inlet;
 #X obj 200 20 inlet;
 #X obj 240 20 inlet;
@@ -865,35 +865,82 @@
 #X floatatom 425 126 5 0 0 0 - - -;
 #X floatatom 452 147 5 0 0 0 - - -;
 #X obj 371 26 r COMP3;
-#N canvas 857 657 450 300 synth 0;
-#X obj 165 22 inlet;
-#X obj 165 52 / 100;
-#X obj 205 22 inlet;
-#X obj 205 52 / 100;
-#X obj 245 22 inlet;
-#X obj 245 52 / 100;
-#X obj 285 22 inlet;
-#X obj 285 52 / 100;
-#X floatatom 165 78 5 0 0 0 - - -;
-#X floatatom 205 78 5 0 0 0 - - -;
-#X floatatom 245 78 5 0 0 0 - - -;
-#X floatatom 285 78 5 0 0 0 - - -;
-#X obj 165 101 abs;
-#X obj 205 101 abs;
-#X obj 245 101 abs;
-#X obj 285 101 abs;
-#X connect 0 0 1 0;
-#X connect 1 0 8 0;
-#X connect 2 0 3 0;
-#X connect 3 0 9 0;
-#X connect 4 0 5 0;
-#X connect 5 0 10 0;
-#X connect 6 0 7 0;
+#N canvas 362 22 648 502 synth 0;
+#X obj 124 22 inlet;
+#X obj 174 22 inlet;
+#X obj 380 24 inlet;
+#X obj 420 24 inlet;
+#X floatatom 124 78 5 0 0 0 - - -;
+#X floatatom 174 78 5 0 0 0 - - -;
+#X floatatom 380 80 5 0 0 0 - - -;
+#X floatatom 420 80 5 0 0 0 - - -;
+#X obj 124 101 abs;
+#X obj 174 101 abs;
+#X obj 380 103 abs;
+#X obj 420 103 abs;
+#X obj 124 179 mtof;
+#X obj 124 211 osc~;
+#X obj 174 211 osc~;
+#X obj 174 242 +~ 1;
+#X obj 174 270 *~ 0.5;
+#X obj 124 308 *~;
+#X obj 124 389 *~;
+#X obj 139 332 vsl 15 45 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 124 420 dac~;
+#X obj 160 367 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 160 395 metro 100;
+#X obj 160 420 tabwrite~ am;
+#X obj 380 229 +~;
+#X obj 420 163 osc~;
+#X obj 420 203 *~;
+#X obj 380 351 *~;
+#X obj 395 294 vsl 15 45 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 380 382 dac~;
+#X obj 416 329 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 416 357 metro 100;
+#X obj 380 143 mtof~;
+#X obj 416 382 tabwrite~ fm;
+#X obj 380 262 osc~;
+#X connect 0 0 4 0;
+#X connect 1 0 5 0;
+#X connect 2 0 6 0;
+#X connect 3 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 9 0;
+#X connect 6 0 10 0;
+#X connect 6 0 26 1;
 #X connect 7 0 11 0;
 #X connect 8 0 12 0;
-#X connect 9 0 13 0;
-#X connect 10 0 14 0;
-#X connect 11 0 15 0;
+#X connect 9 0 14 0;
+#X connect 10 0 32 0;
+#X connect 11 0 25 0;
+#X connect 12 0 13 0;
+#X connect 13 0 17 0;
+#X connect 14 0 15 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 1;
+#X connect 17 0 18 0;
+#X connect 18 0 20 0;
+#X connect 18 0 20 1;
+#X connect 18 0 23 0;
+#X connect 19 0 18 1;
+#X connect 21 0 22 0;
+#X connect 22 0 23 0;
+#X connect 24 0 34 0;
+#X connect 25 0 26 0;
+#X connect 26 0 24 1;
+#X connect 27 0 29 0;
+#X connect 27 0 29 1;
+#X connect 27 0 33 0;
+#X connect 28 0 27 1;
+#X connect 30 0 31 0;
+#X connect 31 0 33 0;
+#X connect 32 0 24 0;
+#X connect 34 0 27 0;
 #X restore 371 186 pd synth;
 #X connect 1 0 2 0;
 #X connect 1 1 3 0;
@@ -943,6 +990,22 @@
 #X connect 7 0 0 0;
 #X restore 712 -241 pd gemwin;
 #X msg 712 -260 create;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array am 100 float 3;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 99 -1 200 140 1;
+#X restore 16 83 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array fm 100 float 3;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 99 -1 200 140 1;
+#X restore 242 83 graph;
 #X connect 3 0 2 0;
 #X connect 4 0 2 1;
 #X connect 5 0 2 2;
