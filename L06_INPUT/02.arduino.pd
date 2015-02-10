@@ -1,8 +1,10 @@
 #N canvas 935 22 596 930 10;
 #X obj 47 39 cnv 15 350 350 empty empty ARDUINO 20 20 0 14 -233017
 -66577 0;
-#X obj 126 123 arduino 1;
-#X msg 126 96 devices;
-#X obj 126 159 print;
+#X obj 91 132 arduino 1;
+#X msg 91 105 devices;
+#X obj 91 168 print;
+#X text 156 51 ::: REQUIRES PDUINO LIBRARY FROM;
+#X text 180 66 at.or.at/hans/pd/objects.html;
 #X connect 1 0 3 0;
 #X connect 2 0 1 0;
