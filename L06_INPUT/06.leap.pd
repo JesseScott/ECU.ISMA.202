@@ -1,3 +1,5 @@
-#N canvas 724 22 596 930 10;
+#N canvas 724 22 888 884 10;
 #X obj 47 39 cnv 15 350 350 empty empty LEAP 20 20 0 14 -233017 -66577
 0;
+#X obj 46 416 hand;
+#X obj 136 178 leapmotion;
