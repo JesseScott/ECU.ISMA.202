@@ -1,89 +1,88 @@
 #N canvas 935 22 596 930 10;
-#X obj 47 39 cnv 15 350 350 empty empty MIDI 20 20 0 14 -233017 -66577
-0;
-#X floatatom 72 254 5 0 0 0 - - -;
-#X obj 56 222 notein;
-#X obj 56 297 select 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67
+#X obj 47 39 cnv 15 350 350 empty empty NANOPAD 20 20 0 14 -233017
+-66577 0;
+#X floatatom 76 152 5 0 0 0 - - -;
+#X obj 60 120 notein;
+#X obj 60 195 select 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67
 ;
-#X obj 56 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 60 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 76 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 80 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 96 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 100 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 116 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 120 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 136 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 140 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 156 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 160 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 176 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 180 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 196 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 200 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 216 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 220 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 236 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 240 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 256 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 260 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 276 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 280 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 296 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 300 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 316 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 320 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 336 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 340 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 356 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 360 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 58 100 For MIDI COntrollers \, simply change the Input device
-in "MEDIA > MIDI Settings";
-#X text 55 191 KORG NANOPAD 2;
-#X text 71 270 velocity;
-#X obj 49 572 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 2973 1;
-#X obj 49 545 ctlin 0;
-#X obj 101 572 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 4042 1;
-#X obj 101 545 ctlin 1;
-#X obj 155 572 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 3438 1;
-#X obj 207 572 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 3159 1;
-#X obj 155 545 ctlin 2;
-#X obj 207 545 ctlin 3;
-#X obj 258 572 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 3949 1;
-#X obj 312 572 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 3856 1;
-#X obj 364 572 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 3763 1;
-#X obj 258 545 ctlin 4;
-#X obj 312 545 ctlin 5;
-#X obj 364 545 ctlin 6;
-#X obj 48 509 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+#X text 75 168 velocity;
+#X obj 47 422 cnv 15 350 350 empty empty NANOKNTRL 20 20 0 14 -233017
+-66577 0;
+#X obj 59 573 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 48 478 ctlin 16;
-#X obj 111 509 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+#X obj 59 546 ctlin 0;
+#X obj 111 573 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 111 478 ctlin 17;
-#X obj 168 509 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 887 1;
-#X obj 231 509 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 489 1;
-#X obj 168 478 ctlin 18;
-#X obj 231 478 ctlin 19;
-#X obj 291 509 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 272 1;
-#X obj 348 509 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 181 1;
-#X obj 411 509 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+#X obj 111 546 ctlin 1;
+#X obj 165 573 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 291 478 ctlin 20;
-#X obj 348 478 ctlin 21;
-#X obj 411 478 ctlin 23;
-#X text 48 446 KORG NANOKNTRL 2;
+#X obj 217 573 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 165 546 ctlin 2;
+#X obj 217 546 ctlin 3;
+#X obj 268 573 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 322 573 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 374 573 vsl 15 60 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 268 546 ctlin 4;
+#X obj 322 546 ctlin 5;
+#X obj 374 546 ctlin 6;
+#X obj 58 510 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 58 479 ctlin 16;
+#X obj 121 510 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 121 479 ctlin 17;
+#X obj 178 510 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 241 510 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 178 479 ctlin 18;
+#X obj 241 479 ctlin 19;
+#X obj 301 510 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 358 510 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 421 510 knob 24 24 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 301 479 ctlin 20;
+#X obj 358 479 ctlin 21;
+#X obj 421 479 ctlin 23;
+#X text 48 446;
 #X connect 2 0 3 0;
 #X connect 2 1 1 0;
 #X connect 3 0 4 0;
@@ -102,17 +101,17 @@ in "MEDIA > MIDI Settings";
 #X connect 3 13 17 0;
 #X connect 3 14 18 0;
 #X connect 3 15 19 0;
-#X connect 24 0 23 0;
-#X connect 26 0 25 0;
+#X connect 23 0 22 0;
+#X connect 25 0 24 0;
+#X connect 28 0 26 0;
 #X connect 29 0 27 0;
-#X connect 30 0 28 0;
+#X connect 33 0 30 0;
 #X connect 34 0 31 0;
 #X connect 35 0 32 0;
-#X connect 36 0 33 0;
-#X connect 38 0 37 0;
-#X connect 40 0 39 0;
+#X connect 37 0 36 0;
+#X connect 39 0 38 0;
+#X connect 42 0 40 0;
 #X connect 43 0 41 0;
-#X connect 44 0 42 0;
+#X connect 47 0 44 0;
 #X connect 48 0 45 0;
 #X connect 49 0 46 0;
-#X connect 50 0 47 0;
