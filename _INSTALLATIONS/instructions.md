@@ -15,8 +15,12 @@ ECU.ISMA.202
 
 #Wiimote
 
-* Put in batteries & turn it on
-*
+  OPTION #1
+* Download and install OSCulator from http://www.osculator.net/
+
+  OPTION #2
+* install the Pd External from http://at.or.at/hans/pd/aka.wiiremote-2008-07-22.zip
+
 
 #Kinect
 
