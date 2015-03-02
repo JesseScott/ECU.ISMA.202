@@ -1,4 +1,5 @@
-#N canvas 935 22 596 930 10;
+#N canvas 753 22 596 930 10;
+#X declare -lib mrpeach;
 #X obj 47 39 cnv 15 350 350 empty empty OSC 20 20 0 14 -233017 -66577
 0;
 #X obj 70 85 dumpOSC 8000;
@@ -13,12 +14,13 @@
 #X obj 70 293 routeOSC /toggle1 /toggle2 /toggle3 /toggle4;
 #X obj 265 328 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 70 323 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 70 323 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 135 324 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 135 324 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 200 325 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 200 325 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
+#X obj 280 67 import mrpeach;
 #X connect 1 0 2 0;
 #X connect 1 0 7 0;
 #X connect 2 0 8 0;
