@@ -15,7 +15,8 @@ ECU.ISMA.202
 
 #Arduino
 
-
+* Download and install Pduino from http://at.or.at/hans/pd/Pduino-0.5.zip
+* Upload Standard Firmata to Arduino board
 
 #Wiimote
 
